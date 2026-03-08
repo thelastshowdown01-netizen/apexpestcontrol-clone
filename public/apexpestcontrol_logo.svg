@@ -1,7 +1,59 @@
-<svg width="240" height="80" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 15 65 L 45 15 L 60 45 L 45 65 Z" fill="#00a0e3" />
-  <path d="M 35 65 L 60 20 L 85 65 Z" fill="#ffad00" />
-  <text x="100" y="45" font-family="'Inter', sans-serif" font-weight="800" font-size="26" fill="#1a1a1b" letter-spacing="-0.5">APEX</text>
-  <text x="175" y="42" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#666666">PEST.IN</text>
-  <text x="100" y="60" font-family="'Inter', sans-serif" font-weight="500" font-size="10" fill="#00a0e3" letter-spacing="0.2em">PEST CONTROL</text>
+<svg width="600" height="160" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Left Leg Gradient -->
+    <linearGradient id="leftLeg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4B77A0" />
+      <stop offset="50%" stop-color="#3b729e" />
+      <stop offset="100%" stop-color="#1b4160" />
+    </linearGradient>
+
+    <!-- Right Leg Gradient -->
+    <linearGradient id="rightLeg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#284c6c" />
+      <stop offset="100%" stop-color="#162e45" />
+    </linearGradient>
+
+    <!-- Top Swoosh Gradient -->
+    <linearGradient id="topSwoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F29824" />
+      <stop offset="100%" stop-color="#C66200" />
+    </linearGradient>
+
+    <!-- Bottom Swoosh Gradient -->
+    <linearGradient id="botSwoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F7B24A" />
+      <stop offset="100%" stop-color="#E27400" />
+    </linearGradient>
+
+    <!-- APEX Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#558CBB" />
+      <stop offset="100%" stop-color="#183B55" />
+    </linearGradient>
+
+    <filter id="shadow" dx="1" dy="1" stdDeviation="1" flood-opacity="0.5">
+      <feDropShadow dx="1" dy="1" stdDeviation="1.5" flood-color="#000" />
+    </filter>
+  </defs>
+
+  <g transform="translate(15, 5)">
+    <!-- Right Leg -->
+    <path d="M 85 30 L 145 105 L 125 105 L 70 40 Z" fill="url(#rightLeg)" filter="url(#shadow)" />
+
+    <!-- Left Leg -->
+    <polygon points="35,105 85,5 110,35 60,105" fill="url(#leftLeg)" filter="url(#shadow)" />
+
+    <!-- Swooshes -->
+    <!-- Top swoosh -->
+    <path d="M 15 95 Q 65 95 115 50 Q 140 25 155 10 L 145 25 Q 115 55 65 85 Q 35 95 5 95 Z" fill="url(#topSwoosh)" filter="url(#shadow)" />
+    <!-- Bottom swoosh -->
+    <path d="M 5 115 Q 65 110 135 45 Q 160 25 175 10 L 165 25 Q 135 60 65 100 Q 30 110 0 115 Z" fill="url(#botSwoosh)" filter="url(#shadow)" />
+
+    <!-- APEX below icon -->
+    <text x="85" y="150" font-family="'Inter', 'Arial Black', sans-serif" font-weight="900" font-size="44" fill="url(#textGrad)" text-anchor="middle" letter-spacing="1" filter="url(#shadow)">APEX</text>
+    <text x="85" y="150" font-family="'Inter', 'Arial Black', sans-serif" font-weight="900" font-size="44" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1" text-anchor="middle" letter-spacing="1">APEX</text>
+  </g>
+
+  <!-- APEXPEST.IN text next to the logo -->
+  <text x="190" y="100" font-family="'Inter', 'Arial Black', sans-serif" font-weight="900" font-size="40" fill="#1a1a1b">APEXPEST.IN</text>
 </svg>
