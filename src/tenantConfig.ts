@@ -8,7 +8,7 @@ export const tenant = {
     companyName: "Apex Pest Control",          // REQUIRED — e.g. "PestoWorld"
     tagline: "Reliable & Honest",              // REQUIRED — e.g. "Pest Control"
     logoUrl: "/apexpestcontrol_logo.svg",  // null = use Bug icon fallback
-    heroImage: "/apexpestcontrol_hero.webp",            // REQUIRED — Unsplash URL or local path
+    heroImage: "/pest_control_new_banner.png",            // REQUIRED — Unsplash URL or local path
 
     // ─── COLOR PALETTE ───
     colors: {
